@@ -2,15 +2,28 @@
 
 
 /* shared styles */
-body{
+body {
     font-family: "Quicksand";
 }
-.header {
+
+.header, .curriculum{
     max-width: 1140px;
     margin: 0 auto;
 }
 
+.main {
+    background-image: url('../assets/bg.png');
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111111;
+    text-align: center;
+    margin: 100px;
+}
 
 
 /* navbar design */
@@ -22,6 +35,12 @@ body{
     justify-content: space-between;
     align-items: center;
 
+}
+
+.nav-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #111111;
 }
 
 .nav-icon {
@@ -98,6 +117,7 @@ body{
     border-radius: 12px;
     background-color: #111111;
     padding: 10px 50px;
+   
 }
 
 .btn-primary a {
@@ -105,16 +125,225 @@ body{
     text-decoration: none;
 }
 
-@media screen and (max-width:576px){
-   .hide{
-    display: none;
-   }
-   .banner{
-    flex-direction: column-reverse;
-    width: 80%;
-    margin: 0 auto;
-   }
-   .banner img{
-    max-width: 380px;
+/* Curriculum Section design */
+
+.card {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+
 }
+
+
+.curriculum-image {
+    text-align: center;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    padding: 3rem 1.5rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    border: none;
+    border-radius: 12px;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.card-title {
+    color: #111111;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 20px 20px;
+}
+
+.card-description {
+    color: rgb(128, 128, 128);
+}
+
+.card-1 {
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-2 {
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-3 {
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.card-btn-1 {
+    background-color: white;
+    border: none;
+    color: rgb(100, 200, 255);
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.card-btn-2 {
+    background-color: white;
+    border: none;
+    color: rgb(240, 170, 0);
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+.card-btn-3 {
+    background-color: white;
+    border: none;
+    color: rgb(135, 0, 255);
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+
+.arrow {
+    text-align: center;
+}
+
+.btn-direction {
+    margin-top: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(254, 163, 1);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+
+/* story part design */
+
+.our-story {
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px auto;
+    max-width: 1140px;
+    gap: 20px;
+    
+   
+
+}
+.container-1{
+    width: 540px;
+    height: 630px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 8px;
+    
+}
+
+.container-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+   
+}
+.image-radius{
+    border-radius: 16px;
+}
+.story-description{
+    padding: 20px 20px;
+}
+.border{
+   width: 290px;
+   height: 300px;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+   
+}
+.story-title{
+    font-weight: bold;
+    font-size: 15px;
+    padding: 0 20px;
+}
+.btn-sky{
+    background-color: rgb(60, 216, 232);
+    width: 174px;
+    height: 48px;
+    border-radius: 48px;
+    color: white;
+    border: none;
+    position: relative;
+    top: -30px;
+    left: 30px;
+    
+}
+.btn-green{
+    background-color: rgb(149, 178, 38);
+    width: 174px;
+    height: 48px;
+    border-radius: 48px;
+    color: white;
+    border: none;
+    position: relative;
+    top: -30px;
+    left: 30px;
+}
+.btn-blue{
+    background-color: rgb(93, 88, 240);
+    width: 174px;
+    height: 48px;
+    border-radius: 48px;
+    color: white;
+    border: none;
+    position: relative;
+    top: -30px;
+    left: 30px;
+}
+.btn-secondary{
+    border: none;
+    border-radius: 12px;
+    background-color: #111111;
+    padding: 10px 50px;
+    color: white;
+}
+.center{
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:576px) {
+    .hide {
+        display: none;
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .banner img {
+        max-width: 320px;
+
+    }
+
+    .card {
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .container-2{
+        grid-template-columns: repeat(2,1fr);
+       
+    }
 }
