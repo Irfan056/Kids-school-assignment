@@ -5,6 +5,7 @@
 body {
     font-family: "Quicksand";
 }
+  
 
 .header, .curriculum, .footer-content{
     max-width: 1140px;
@@ -27,7 +28,6 @@ body {
 
 
 /* navbar design */
-
 
 .navbar {
 
@@ -228,7 +228,7 @@ body {
 
 .our-story {
     background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
-    
+    padding-bottom: 10px;
 }
 
 .container {
@@ -319,6 +319,23 @@ body {
     text-align: center;
 }
 
+/* marquee Design */
+.marquee{
+    width: 100%;
+    overflow: hidden;
+    margin: 10px;
+    max-width: 1440px;
+    margin-left: 170px;
+    
+    
+}
+.marquee-content{
+    font-weight: bold;
+    font-size: 20px;
+    color: darkred;
+}
+
+
 /* footer design */
 .footer{
     background-color: #01ACFD;
@@ -352,6 +369,10 @@ body {
 .footer-icon{
     max-width: 400px;
     color: white;
+}
+.footer-icon-images{
+    display: flex;
+    gap: 5px;
 }
 .school{
     font-weight: bold;
@@ -410,6 +431,12 @@ body {
     .btn-blue, .btn-green, .btn-sky{
         max-width: 103px;
     }
+    .marquee{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
     .footer-content{
         flex-direction: column;
         max-width: 173px;
