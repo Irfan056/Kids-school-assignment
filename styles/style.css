@@ -12,8 +12,12 @@ body {
     margin: 0 auto;
 }
 
-.main, .footer{
+.main{
     background-image: url('../assets/bg.png');
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.footer{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -48,7 +52,7 @@ body {
     gap: 10px;
 }
 
-.lists ul {
+.lists{
     display: flex;
     list-style: none;
     gap: 20px;
@@ -58,7 +62,7 @@ body {
 
 }
 
-.lists ul li a {
+.lists li a {
     text-decoration: none;
 }
 
@@ -338,7 +342,7 @@ body {
 
 /* footer design */
 .footer{
-    background-color: #01ACFD;
+    background-color: #2a6986;
    
 }
 
@@ -398,6 +402,9 @@ body {
     .hide {
         display: none;
     }
+    .line{
+        border-bottom: 1px solid orange;
+    }
 
     .banner {
         flex-direction: column-reverse;
@@ -450,5 +457,11 @@ body {
     }
     .school{
         font-size: 20px;
+    }
+}
+
+@media screen and (min-width:577px){
+    #three-line{
+        display: none;
     }
 }
