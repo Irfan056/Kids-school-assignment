@@ -6,12 +6,12 @@ body {
     font-family: "Quicksand";
 }
 
-.header, .curriculum{
+.header, .curriculum, .footer-content{
     max-width: 1140px;
     margin: 0 auto;
 }
 
-.main {
+.main, .footer{
     background-image: url('../assets/bg.png');
     max-width: 1440px;
     margin: 0 auto;
@@ -318,7 +318,59 @@ body {
     text-align: center;
 }
 
+/* footer design */
+.footer{
+    background-color: #01ACFD;
+   
+}
 
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    margin: 0 auto;
+}
+.footer-about h3{
+    font-weight: 500;
+    font-size: 26px;
+   
+}
+.footer-about li{
+    list-style: none;
+    padding-bottom: 10px;
+}
+.footer-about li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    
+}
+.footer-icon{
+    max-width: 400px;
+    color: white;
+}
+.school{
+    font-weight: bold;
+    font-size: 42px;
+    max-width: 206px;
+    height: 60px;
+    padding-bottom: 20px;
+}
+.logo-name{
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+/* Responsive */
 
 @media screen and (max-width:576px) {
     .hide {
@@ -341,9 +393,34 @@ body {
         width: 90%;
         margin: 0 auto;
     }
-    
     .container-2{
         grid-template-columns: repeat(2,1fr);
+        width: 90%;
+        margin: 0 auto;
+        padding-right: 18px;
        
+    }
+    
+    .border, .image-radius{
+        max-width: 172px;
+        margin: 0 auto;
+       
+    }
+    .btn-blue, .btn-green, .btn-sky{
+        max-width: 103px;
+    }
+    .footer-content{
+        flex-direction: column;
+        max-width: 173px;
+        
+    }
+    .logo-name{
+        gap: 5px;
+    }
+    .logo-name img{
+        height: 80px;
+    }
+    .school{
+        font-size: 20px;
     }
 }
