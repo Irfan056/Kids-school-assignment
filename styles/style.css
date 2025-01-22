@@ -170,6 +170,7 @@ body {
 
 .card-1 {
     background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+    padding: 30px 20px;
 }
 
 .card-2 {
